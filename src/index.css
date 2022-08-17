@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1c1e29;
+}
+
+.homePageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100vh;
+}
+
+.formWrapper {
+  background: #282a36;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  color: #4aee88;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainLabel {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.homePageLogo {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.inputBox {
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn {
+  font-family: 'Lato', sans-serif;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.joinBtn,
+.leaveBtn {
+  font-family: 'Lato', sans-serif;
+  color: #eee;
+  background: #ef5b0c;
+  width: 100px;
+  margin-left: auto;
+}
+
+.joinBtn:hover,
+.leaveBtn:hover {
+  background: #ac582a;
+}
+
+.createInfo {
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.createNewBtn {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding: 4px 10px 4px 10px;
+  color: #000;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.label {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+/* .createNewBtn:hover {
+  color: #368654;
+  border-color: #368654;
+} */
+
+.mainWrap {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+
+.aside {
+  background: #1c1e29;
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.asideInner {
+  flex: 1;
+}
+
+.clientsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+.userName {
+  margin-top: 10px;
+}
+
+.logo {
+  border-bottom: 1px solid #424242;
+  padding-bottom: 10px;
+}
+
+.logoImage {
+  height: 42px;
+}
+
+.leaveBtn {
+  width: 100%;
+  margin-top: 20px;
+}
+.CodeMirror {
+  min-height: calc(100vh - 20px);
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 16px;
+  }
+  .userName {
+    font-size: 15px;
+  }
+  .mainWrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .aside {
+    height: 250px;
+  }
+  .copyBtn {
+    display: none;
+  }
+  .CodeMirror {
+    width: clac(100vw-20px);
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
