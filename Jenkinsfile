@@ -9,13 +9,5 @@ pipeline {
                 }
             }
         }
-        stage('Application Build ') { 
-            steps {
-                echo "Build Project"
-                nodejs("Node"){
-                    sh "npm run build"
-                }  
-            }
-        }
     }
     }
