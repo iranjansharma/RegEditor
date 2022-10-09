@@ -34,7 +34,7 @@ const Home = () => {
       toast.error("Username is Required")
       return
     }
-    // Redirect to the roomId .
+   
     navigate(`/editor/${roomId}`, {
       state: {
         username
